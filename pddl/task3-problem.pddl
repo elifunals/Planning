@@ -1,0 +1,12 @@
+(define (problem birthday-dinner)
+  (:domain birthday-dinner)
+  (:objects meat rice book cake trash room)
+  (:init 
+  (garbage trash) 
+  (not (clean room))
+  (clean meat) 
+  (clean cake) 
+  (clean rice) 
+  (quiet book))
+  (:goal (and (dinner meat)(dinner rice)(dinner cake) (present book) (not (garbage trash)) (not (quiet trash)) (clean room)))
+)
